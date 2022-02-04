@@ -5,6 +5,11 @@
 --
 -- Inspired by: jgreco/mpv-scripts: fastforward.lua
 --
+-- Usage: put this hold_accelerate.lua file in the mpv scripts folder
+-- You can customize the speed_up speed and slow_speed by changing the
+-- the corresponding variables. The key can also be changed by varying
+-- first argument of the key_binding commands at the end.
+-- The slow_down audio performance is the best with rubberband.
 
 local mp = require("mp")
 local decay_delay = 0.05 -- rate of time by which playback speed is decreased
