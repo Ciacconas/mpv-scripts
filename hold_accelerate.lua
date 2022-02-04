@@ -22,7 +22,6 @@ local function fast_play(table)
 	if table == nil or table["event"] == "down" or table["event"] == "repeat" then
 		mp.set_property("speed", fast_speed)
 		mp.osd_message((">> x%.1f"):format(fast_speed), osd_duration)
-		-- inc_speed()
 	elseif table["event"] == "up" then
 		mp.set_property("speed", 1.0)
 		mp.osd_message("1.0x", osd_duration)
@@ -33,7 +32,6 @@ local function slow_play(table)
 	if table == nil or table["event"] == "down" or table["event"] == "repeat" then
 		mp.set_property("speed", slow_speed)
 		mp.osd_message((">> x%.1f"):format(slow_speed), osd_duration)
-		-- inc_speed()
 	elseif table["event"] == "up" then
 		mp.set_property("speed", 1.0)
 		mp.osd_message("1.0x", osd_duration)
